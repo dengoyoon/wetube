@@ -30,10 +30,10 @@ app.use(helmet({
 //     })
 // );
 //ex) res.render("content") -> recognize as content.pug
-app.use(function(req, res, next) {
-    res.setHeader("Content-Security-Policy", "script-src 'self' https://archive.org");
-    return next();
-});
+// app.use(function(req, res, next) {
+//     res.setHeader("Content-Security-Policy", "script-src 'self' https://archive.org");
+//     return next();
+// });
 app.set("view engine", "pug");
 app.use(cookieParser());
 //bodyParser is a middleware that checks the information that is delivered to the user's web
